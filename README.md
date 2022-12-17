@@ -3,7 +3,7 @@
 Cette application de magasin en Django est conçue pour permettre aux utilisateurs de consulter et d'acheter des produits en ligne. Elle comprend les fonctionnalités CRUD suivantes :
 
 * Créer : Les utilisateurs peuvent ajouter de nouveaux produits au magasin en remplissant un formulaire.
-* Rechercher : La fonctionalité suivant n'y est pas.
+* Rechercher : La fonctionalité suivante n'y est pas.
 * Update : Les utilisateurs peuvent mettre à jour les informations sur les produits existants en utilisant un formulaire.
 * Delete : Les utilisateurs peuvent supprimer des produits du magasin en utilisant une fonction de suppression.
 
