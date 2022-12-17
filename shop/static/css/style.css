@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans', sans-serif;
+    background-color: #171717;
+}
+
+.container {
+  height: 70vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.product {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #e2e2e2;
+  box-shadow: 1px 1px .5em #d8d8d8;
+}
+
+.product img {
+  display: block;
+  width: 400px;
+  overflow: hidden;
+  margin: 0;
+}
+.product .content {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: .8em;
+}
+
+.product img:hover {
+  opacity: 0.9;
+}
+
+.content h3 {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  color: #171717;
+}
+
+.content span {
+  font-size: 1.15rem;
+}
+
+h3 + span {
+  margin-top: .5em;
+}
+
+.content a {
+  color: #171717;
+  text-decoration: none;
+}
+
+.link {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(59, 57, 57);
+}
+
+.link a {
+  transition: background .2s step-start;
+  width:100%;
+  color: #fff;
+  padding: 1rem;
+  text-decoration: none;
+}
+ 
+.link a:hover {
+  background-color: rgb(0,0,0);
+}
+
+.content a:hover{
+  color: rgb(0,0,0);
+}
+
+
+.title {
+  margin-top: -100px;
+  width: 100%;
+}
+.title h1 {
+  color: white;
+  font-size: 100px;
+  display: flex;
+  text-align: center;
+  margin-top: 300px;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .title h1 {
+    font-size: 50px;
+  }
+}
+.title h3 {
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 50px;
+  display: flex;
+}
+@media (max-width: 800px) {
+  .title h3 {
+    font-size: 25px;
+  }
+}
+
+.who {
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: fixed;
+  color: #eeeeee;
+  font-weight: 600;
+  transform-origin: center;
+  font-size: 15px;
+  background-color: #f5b223;
+  align-items: center;
+  padding: 15px 50px;
+}
+.button:hover {
+  background: #f5b223;
+  box-shadow: 0 0 5px #f5b223, 0 0 25px #f5b223, 0 0 50px #f5b223, 0 0 200px #f5b223;
+}
+
+p {
+  color: white;
+  top: 100%;
+  font-size: 18px;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  p {
+    font-size: 16px;
+  }
+}

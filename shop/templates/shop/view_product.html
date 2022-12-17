@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../static/css/style.css">
+</head>
+<body>
+    {% block content %}
+    <div class="container"> 
+        <div class="products">
+            <div class="product">
+            <img src="{{ product.image_url }}" alt="{{ product.name }}">
+            <div class="content">
+                <h3><a href="#">{{ product.name }}</a></h3>
+                <span><a href="#">{{ product.price }} euros</a></span>
+                <span><a href="#">{{ product.stock }} stock</a></span>
+            </div>
+            <div class="link">
+                <a href="/shop/update_product/{{ product.id }}">Edit</a>
+                <a href="/shop/delete_product/{{ product.id }}">Delete</a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="button"><a href="/shop/products">Retourner aux produits</a></div>
+    {% endblock %}
+</body>
+</html>
